@@ -47,6 +47,16 @@ Commands entered in the client.py command line follow similar syntax and form bu
 
 All information, warnings, and errors are logged to the main.py window on the remote host screen. The most convenient way to work with the system is to SSH into the remote host, start main.py, and leave the shell visible on the client computer.
 
+### Windows Batch File and Multiplay Integration ###
+client.py commands can be executed from a batch file in a manner similar to the following:
+```
+cd /d %~dp0
+cd ../
+python client.py loop() blink(2) blink(3) loop(5) blink([2, 3, 4, 5], 10) close
+```
+A host of example batch files and a template for custom commands are included in the bat directory. These can be used to quickly send common groups of commands, create intricate patterns, or connect to different host addresses using the optional client.py IP argument.
+Similar to [OSC-Control](https://github.com/jmcker/OSC-Control---ETC-Eos/), these .bat files can be selected in the **Command** field of a Multiplay launch cue. This integration allows a user to deliver commands to the remote system without having to leave the Multiplay cue list.
+
 For more detailed setup or usage instructions, please contact me. Though the project was not designed with reuse in mind, I would be glad to help anyone interested and will hopefully find time to provide better documentation soon.
 
 ## System Requirements ##
