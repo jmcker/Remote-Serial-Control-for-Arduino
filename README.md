@@ -1,6 +1,6 @@
 # Remote-Serial-Control-for-Arduino #
 
-This program allows a client to send commands to an Arduino via serial connection on a remote host. Originally developed for a rather intricate theater prop, the setup includes commands for controlling a matrix of pins connected to the Arduino (i.e. LED matrix), displays connected to the remote host computer, and other aspects of the host operating system.
+This program allows a client to send commands over a network to an Arduino (via USB serial connection on a remote host computer). Originally developed for a rather intricate theater prop, the setup includes commands for controlling a matrix of pins connected to the Arduino (i.e. LED matrix), displays connected to the remote host computer, and other aspects of the host operating system. The library developed to send serial commands to the Arduino (ardcommands.py) can also stand alone and be imported into other projects for use without the networking aspects of this particular setup.
 
 ### main.py ###
 ```python 
@@ -44,7 +44,7 @@ Commands entered in the client.py command line follow similar syntax and form bu
 ```
 
 ### ardcommands.py ###
-ardcommands.py is a library containing the commands related to controlling and querying the Arduino over serial.
+ardcommands.py is a library containing the commands related to controlling and querying the Arduino over serial. This library can stand alone and be imported into other projects requiring Arduino serial control.
 
 ## Other Information ##
 
