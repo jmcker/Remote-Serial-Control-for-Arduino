@@ -88,9 +88,6 @@ def main(args = []):
             print
     else:
         HOST = getIpAddress()
-		
-	# Wait to import so that the help menu can be called on systems without nanpy installed yet
-	from nanpy import (ArduinoApi, SerialManager)
 
     # Initialize pins, connect to Arduino, and setup pin modes
     ledPins = initializeLedPins(26)
