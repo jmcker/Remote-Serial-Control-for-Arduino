@@ -47,7 +47,7 @@ Commands entered in the client.py command line follow similar syntax and form bu
 
 All information, warnings, and errors are logged to the main.py window on the remote host screen. The most convenient way to work with the system is to SSH into the remote host, start main.py, and leave the shell visible on the client computer.
 
-For more detailed installation and setup instructions, please contact me. Though the project was not designed with reuse in mind, I would be glad to help anyone interested and will hopefully find time to provide better documentation soon.
+For more detailed setup or usage instructions, please contact me. Though the project was not designed with reuse in mind, I would be glad to help anyone interested and will hopefully find time to provide better documentation soon.
 
 ## System Requirements ##
 * Python 2.7 (available [here](https://www.python.org/ftp/python/2.7.14/python-2.7.14rc1.amd64.msi) for 64-bit Windows or [here](https://www.python.org/ftp/python/2.7.14/python-2.7.14rc1.msi) for 32-bit Windows)
