@@ -2,7 +2,7 @@
 
 This program allows a client to send commands to an Arduino via serial connection on a remote host. Originally developed for a rather intricate theater prop, the setup includes commands for controlling a matrix of pins connected to the Arduino (i.e. LED matrix), displays connected to the remote host computer, and other aspects of the host operating system.
 
-Executing:
+### main.py ###
 ```python 
 python main.py -help
 ```
@@ -13,6 +13,8 @@ python main.py -c
 will display the full list of available commands.
 
 main.py is run on the remote host machine, which should be connected to the Arduino via USB.
+
+### client.py ###
 
 client.py can be used to connect to the remote host from any other computer. Multiple simultaneous connections are supported but take care as timed commands will overlap.
 
@@ -34,6 +36,9 @@ Commands entered in the client.py command line follow similar syntax and form bu
 192.168.1.103[10000] $$>blink(2)
 192.168.1.103[10000] $$>blink(3)
 ```
+
+## Other Information ##
+
 All information, warnings, and errors are logged to the main.py window on the remote host screen. The most convenient way to work with the system is to SSH into the remote host, start main.py, and leave the shell visible on the client computer.
 
 For more detailed installation and setup instructions, please contact me. Though the project was not designed with reuse in mind, I would be glad to help anyone interested and will hopefully find time to provide better documentation soon.
