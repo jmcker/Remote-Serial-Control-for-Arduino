@@ -34,10 +34,14 @@ def initializeRelayPins(relayPinList=[46, 47, 48, 49, 50, 51, 52, 53]):
 # Connection to Arduino
 def connect():
     global ard
+    
+    # Wait to import so that the help menu can be called on systems without nanpy installed
+	from nanpy import (ArduinoApi, SerialManager)
+    
     # Connection
     try:
         print "Connecting to Arduino..."
-        connection = SerialManager() # port and baud rate ?
+        connection = SerialManager() # port and baud rate not required
         ard = ArduinoApi (connection = connection)
     except:
         print "Could not connect to Arduino."
