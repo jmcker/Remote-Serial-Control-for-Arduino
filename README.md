@@ -35,6 +35,12 @@ Commands entered in the client.py command line follow similar syntax and form bu
 ```python
 192.168.1.103[10000] $$>blink(2)
 192.168.1.103[10000] $$>blink(3)
+192.168.1.103[10000] $$>turnOn(getColumn(3))
+192.168.1.103[10000] $$>turnOn(getRow(3))
+192.168.1.103[10000] $$>turnOff(getDiagonal(1, "LR"))
+192.168.1.103[10000] $$>turnOff(1)
+192.168.1.103[10000] $$>turnOff(ledPins)
+192.168.1.103[10000] $$>turnOff(allInputPins)
 ```
 
 ## Other Information ##
