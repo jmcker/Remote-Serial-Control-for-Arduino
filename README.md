@@ -1,8 +1,6 @@
 # Remote-Serial-Control-for-Arduino #
 
-This program allows a client to control an Arduino via a remote host and [nanpy](https://pypi.python.org/pypi/nanpy)). Originally developed for a rather intricate theater prop, the setup includes commands for controlling a matrix of LEDs connected to the Arduino, displays connected to the remote host, and other aspects of the host operating system.
-
-[This](https://www.youtube.com/watch?v=QumIhvYtRKQ) video describes how to setup an Arduino as a slave with nanpy.
+This program allows a client to send commands to an Arduino via serial connection on a remote host. Originally developed for a rather intricate theater prop, the setup includes commands for controlling a matrix of pins connected to the Arduino (i.e. LED matrix), displays connected to the remote host computer, and other aspects of the host operating system.
 
 Executing:
 ```python 
@@ -44,6 +42,8 @@ For more detailed installation and setup instructions, please contact me. Though
 * Python 2.7 (available [here](https://www.python.org/ftp/python/2.7.14/python-2.7.14rc1.amd64.msi) for 64-bit Windows or [here](https://www.python.org/ftp/python/2.7.14/python-2.7.14rc1.msi) for 32-bit Windows)
 * [nanpy](https://pypi.python.org/pypi/nanpy)
 * [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+
+[This](https://www.youtube.com/watch?v=QumIhvYtRKQ) video describes how to setup an Arduino as a serial slave with nanpy.
 
 ## Contact ##
 Jack McKernan ([jmcker@outlook.com](mailto:jmcker@outlook.com))
