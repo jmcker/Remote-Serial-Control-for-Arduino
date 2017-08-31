@@ -36,7 +36,7 @@ def connect():
     global ard
     
     # Wait to import so that the help menu can be called on systems without nanpy installed
-	from nanpy import (ArduinoApi, SerialManager)
+    from nanpy import (ArduinoApi, SerialManager)
     
     # Connection
     try:
