@@ -14,9 +14,6 @@ will display the full list of available commands.
 
 main.py is run on the remote host machine, which should be connected to the Arduino via USB.
 
-### ardcommands.py ###
-ardcommands.py is a library containing the commands related to controlling and querying the Arduino over serial.
-
 ### client.py ###
 
 client.py can be used to connect to the remote host from any other computer. Multiple simultaneous connections are supported but take care as timed commands will overlap.
@@ -45,6 +42,9 @@ Commands entered in the client.py command line follow similar syntax and form bu
 192.168.1.103[10000] $$>turnOff(ledPins)
 192.168.1.103[10000] $$>turnOff(allInputPins)
 ```
+
+### ardcommands.py ###
+ardcommands.py is a library containing the commands related to controlling and querying the Arduino over serial.
 
 ## Other Information ##
 
