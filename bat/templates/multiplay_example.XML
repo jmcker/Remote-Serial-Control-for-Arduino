@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Production>
+  <Version>2.5.5.0</Version>
+  <FileName>Example\Path\bat\templates\multiplay_example.XML</FileName>
+  <LastModified>2016-12-23 12:34:27 am</LastModified>
+  <General>
+    <AutoStart>0</AutoStart>
+  </General>
+  <Appearance>
+    <CueList Name="Arial" Size="10" Colour="clWhite" BgColour="clBlack" CueSelectedBgColour="clPurple" CueSelectedFontColour="clWhite" CueColourStyle="0" CueListScrollBars="-1" FontColourAudio="clWhite" FontColourControl="clWhite" FontColourEnd="clWhite" FontColourMemo="clWhite" FontColourMidi="clWhite" FontColourMidiMute="clWhite" FontColourMidiSeq="clWhite" FontColourMSC="clWhite" FontColourPlayList="clWhite" FontColourSerial="clWhite" FontColourTelnet="clWhite" FontColourVideo="clWhite" FontColourWait="clWhite" FontColourLaunch="clWhite" BgColourAudio="clBlack" BgColourControl="clBlack" BgColourEnd="clBlack" BgColourMemo="clBlack" BgColourMidi="clBlack" BgColourMidiMute="clBlack" BgColourMidiSeq="clBlack" BgColourMSC="clBlack" BgColourPlayList="clBlack" BgColourSerial="clBlack" BgColourTelnet="clBlack" BgColourVideo="clBlack" BgColourWait="clBlack" BgColourLaunch="clBlack"/>
+    <ProgressBar ColourPlaying="clGreen" ColourPaused="clBlue" ColourWarning="clRed" ColourLooping="clGreen" MaxWhenLooping="-1" ProgressFullHeight="-1"/>
+    <NotesHeader Name="Arial" Size="12" BgColour="clBlack" Colour="clRed"/>
+    <NotesBody Name="Arial" Size="10" Colour="clBlack" BgColour="clCream"/>
+    <Buttons StopwatchFontColour="clWhite" StopwatchBgColour="clBlack" ClockFontColour="clWhite" ClockBgColour="clBlack" StopAllFontColour="clYellow" StopAllBgColour="clBlack" FadeAllFontColour="clAqua" FadeAllBgColour="clBlack" AdvanceFontColour="$000080FF" AdvanceBgColour="clBlack"/>
+    <HideFractionalSeconds>0</HideFractionalSeconds>
+  </Appearance>
+  <Audio PreviewDevice="1">
+    <Patch Name="Output 1" Device="1"/>
+    <Patch Name="Output 2" Device="1"/>
+    <Patch Name="Output 3" Device="1"/>
+    <Patch Name="Output 4" Device="1"/>
+  </Audio>
+  <MIDI>
+    <Muting Output="0" Channel="0"/>
+  </MIDI>
+  <Telnet>
+    <Listen Port="0" Active="0"/>
+  </Telnet>
+  <Triggers>
+    <Action Name="actGo" Key="32" Shift="" Direction="0"/>
+    <Action Name="actPauseAll" Key="0" Shift="" Direction="0"/>
+    <Action Name="actResumeAll" Key="0" Shift="" Direction="0"/>
+    <Action Name="actStopAll" Key="27" Shift="" Direction="0"/>
+    <Action Name="actFadeAllOut" Key="0" Shift="" Direction="0"/>
+    <Action Name="actAdvance" Key="0" Shift="" Direction="0"/>
+    <Action Name="actCuePause" Key="0" Shift="" Direction="0"/>
+    <Action Name="actCueResume" Key="0" Shift="" Direction="0"/>
+    <Action Name="actCueStop" Key="0" Shift="" Direction="0"/>
+    <Action Name="actCueFadeOut" Key="0" Shift="" Direction="0"/>
+    <Action Name="ActStopVolumeFade" Key="0" Shift="" Direction="0"/>
+    <Action Name="ActStopPanFade" Key="0" Shift="" Direction="0"/>
+    <Action Name="ActStopPitchFade" Key="0" Shift="" Direction="0"/>
+    <Action Name="actCuePreview" Key="0" Shift="" Direction="0"/>
+    <Action Name="actCueRestart" Key="0" Shift="" Direction="0"/>
+    <Action Name="actCuePrevTrack" Key="0" Shift="" Direction="0"/>
+    <Action Name="actCueNextTrack" Key="0" Shift="" Direction="0"/>
+    <Action Name="actCueJump" Key="74" Shift="Ctrl+" Direction="0"/>
+    <Action Name="actStopwatchStart" Key="0" Shift="" Direction="0"/>
+    <Action Name="actStopwatchStop" Key="0" Shift="" Direction="0"/>
+    <Action Name="actStopwatchReset" Key="0" Shift="" Direction="0"/>
+  </Triggers>
+  <HotButtons ColumnCount="1" RowCount="1" FontSize="12" FontName="Arial" UseCueDescriptions="0">
+    <Button Caption="1" CaptionColour="clBlack" BtnColour="clCream" CueUID=""/>
+  </HotButtons>
+  <Layouts DefaultLayout="0">
+    <Layout ColumnStates="15#50,30,78,96,153,186,90,90,90,50,50,50,50,100,64#0,1,2,3,4,5,6,7,8,9,10,11,12,13,14#1,1,1,1,1,1,1,1,1,1,1,1,1,1,1" DirectEdit="0" LimitedUser="0" Name="Default Layout">
+      <Window Name="Main" Top="0" Left="953" Width="500" Height="500" Maximised="0"/>
+      <Notes UpperPaneSize="108" LowerPaneSize="108"/>
+      <sitelist>
+				<site id="fmMain.DockSite">
+					<zone kind="HORZ">
+						<zone kind="VERT" size="32" dsize="0.0607210626185958">
+							<zone kind="PANEL" id="fmMain.DkElapsedTime" visible="0" floatwidth="32" floatheight="154" size="315" dsize="1"/>
+							<zone kind="PANEL" id="fmMain.dkRemainingTime" visible="0" floatwidth="49" floatheight="315" size="315" dsize="1"/>
+						</zone>
+						<zone kind="VERT" size="121" dsize="0.126834381551363">
+							<zone kind="PANEL" id="fmMain.dkCueControls" visible="0" floatwidth="157" floatheight="315" size="32" dsize="0.137241925575692"/>
+							<zone kind="PANEL" id="fmMain.DkClock" visible="0" floatwidth="180" floatheight="38" size="32" dsize="0.127402738446144"/>
+							<zone kind="PANEL" id="fmMain.DkGo" visible="1" floatwidth="180" floatheight="41" size="998" dsize="1"/>
+							<zone kind="PANEL" id="fmMain.DkExtTools" visible="0" floatwidth="180" floatheight="35" size="55" dsize="0.201264741978716"/>
+							<zone kind="PANEL" id="fmMain.DkStopAll" visible="0" floatwidth="180" floatheight="32" size="32" dsize="0.0263161343166393"/>
+							<zone kind="PANEL" id="fmMain.DkFadeAll" visible="0" floatwidth="180" floatheight="32" size="175" dsize="0.569394127934511"/>
+							<zone kind="PANEL" id="fmMain.DkAdvance" visible="0" floatwidth="180" floatheight="32" size="141" dsize="0.452759289887748"/>
+							<zone kind="PANEL" id="fmMain.DkStopwatch" visible="0" floatwidth="180" floatheight="32" size="315" dsize="1"/>
+						</zone>
+						<zone kind="PANEL" id="fmMain.DkCueList" visible="1" floatwidth="32" floatheight="317" size="833" dsize="0.873165618448637" isspace="1"/>
+						<zone kind="VERT" size="334" dsize="0.642307692307692">
+							<zone kind="HORZ" size="315" dsize="1">
+								<zone kind="VERT" size="334" dsize="1">
+									<zone kind="PANEL" id="fmMain.dkAdlibList" visible="0" floatwidth="334" floatheight="157" size="157" dsize="0.504823151125402"/>
+									<zone kind="PANEL" id="fmMain.DkHotButtons" visible="0" floatwidth="110" floatheight="185" size="315" dsize="1"/>
+								</zone>
+								<zone kind="PANEL" id="fmMain.DkNotes" visible="0" floatwidth="308" floatheight="317" size="334" dsize="1"/>
+							</zone>
+							<zone kind="PANEL" id="fmMain.DkPreviewer" visible="0" floatwidth="110" floatheight="128" size="334" dsize="1"/>
+						</zone>
+						<zone kind="PANEL" id="fmMain.dkVideoPreview" visible="0" floatwidth="32" floatheight="315" size="32" dsize="0.0611854684512428"/>
+					</zone>
+				</site>
+			</sitelist>
+    </Layout>
+  </Layouts>
+  <CueList Name="Main">
+    <Cue>
+      <UID>1</UID>
+      <Type>14</Type>
+      <Enabled>-1</Enabled>
+      <Description>default</Description>
+      <Trigger Key="0" Shift="" Direction="0"/>
+      <Appearance CustomRowFontColour="clYellow" CustomRowBgColour="clBlack"/>
+      <Advance Action="1" Target="0"/>
+      <Command>Insert\Path\To\This\File-->\bat\default-go.bat</Command>
+    </Cue>
+    <Cue>
+      <UID>3</UID>
+      <Type>14</Type>
+      <Enabled>-1</Enabled>
+      <Description>blackout</Description>
+      <Trigger Key="0" Shift="" Direction="0"/>
+      <Appearance CustomRowFontColour="clYellow" CustomRowBgColour="clBlack"/>
+      <Advance Action="1" Target="0"/>
+      <Command>Insert\Path\To\This\File-->\bat\blackout.bat</Command>
+    </Cue>
+    <Cue>
+      <UID>2</UID>
+      <Type>14</Type>
+      <Enabled>-1</Enabled>
+      <Description>console</Description>
+      <Trigger Key="0" Shift="" Direction="0"/>
+      <Appearance CustomRowFontColour="clYellow" CustomRowBgColour="clBlack"/>
+      <Advance Action="1" Target="0"/>
+      <Command>Insert\Path\To\This\File-->\bat\client.bat</Command>
+    </Cue>
+  </CueList>
+  <AdlibList/>
+</Production>

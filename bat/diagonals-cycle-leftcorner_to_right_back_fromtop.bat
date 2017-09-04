@@ -1,0 +1,4 @@
+cd /d %~dp0
+cd ../
+SET t=.1
+python client.py turnOn(getDiagonal(1,'RL')) sleep(%t%) turnOn(getDiagonal(2,'RL')) sleep(%t%) turnOn(getDiagonal(3,'RL')) sleep(%t%) turnOn(getDiagonal(4,'RL')) sleep(%t%) turnOn(getDiagonal(5,'RL')) sleep(%t%) turnOn(getDiagonal(6,'RL')) sleep(%t%) turnOn(getDiagonal(7,'RL')) sleep(%t%) turnOn(getDiagonal(8,'RL')) sleep(%t%) turnOn(getDiagonal(9,'RL')) sleep(%t%) turnOff(getDiagonal(1,'RL')) sleep(%t%) turnOff(getDiagonal(2,'RL')) sleep(%t%) turnOff(getDiagonal(3,'RL')) sleep(%t%) turnOff(getDiagonal(4,'RL')) sleep(%t%) turnOff(getDiagonal(5,'RL')) sleep(%t%) turnOff(getDiagonal(6,'RL')) sleep(%t%) turnOff(getDiagonal(7,'RL')) sleep(%t%) turnOff(getDiagonal(8,'RL')) sleep(%t%) turnOff(getDiagonal(9,'RL')) sleep(%t%) loop(1) close
