@@ -29,7 +29,7 @@ Example with optional IP:
 python client.py [192.168.1.103] loop() blink(2) blink(3) loop(5) blink([2, 3, 4, 5], 10) close
 ```
 This command would blink pins 2 and 3 in succession, for one second each, 5 times. After exiting the loop, the command would finish by blinking pins 2, 3, 4, and 5 a single time, simultaneously, for 10 seconds (10s on/10s off) and finally, closing the client.py window. 
-Most commands accept either an integer or an array and have additional parameters for controlling timing and repetition (see main.py -c for the command list with all parameters).
+Most commands accept either an integer or list and have additional parameters for controlling timing and repetition (see main.py -c for the command list with all parameters).
 
 Commands entered in the client.py command line follow similar syntax and form but can only be entered one line at a time:
 ```python
